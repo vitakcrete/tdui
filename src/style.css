@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html, body{
+    height:100%;
+    background: rgb(25, 25, 25);
+}
+
+.container {
+    padding: 0.5rem;
+    height: 100%;
+    max-width: 99%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+    
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    background: rgb(50, 50, 50);
+    border-radius: 10px;
+
+}
+#logo{
+    width: 45px;
+    height:45px;
+    margin: 0.8rem;
+}
+.logo-text {
+    display: flex;
+    font-size: 15px;
+    color: white;
+    padding : 0.8rem
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height:100%;
+    width: 100%;
+
+
+}
+
+.upper-body-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    flex:6.5;
+}
+
+.view2d-container{
+    background-color: blueviolet;
+    width:55%;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+.status-container {
+    background-color: rgb(131, 226, 43);
+    width:27% ;
+    margin-right: 10px;
+    border-radius: 15px;
+
+}
+.projector-control{
+    background-color: rgb(226, 64, 43);
+    width:28% ;
+    border-radius: 15px;
+}
+
+.middle-body-container {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    margin-top: 10px;
+    flex:2;
+    border-radius: 15px;
+
+}
+
+.bottom-body-container {
+    margin-top: 10px;
+    background-color: pink;
+    flex:1.5;
+    border-radius: 15px;
+}
