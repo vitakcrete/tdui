@@ -5,6 +5,22 @@
         <meta name = "viewport" content = "width =device-width, initial-scale=1.0">
         <title>td test</title>
         <link rel="stylesheet" href="style.css">
+        <script>
+            const ws = new WebSocket("ws://192.168.50.18:8001");
+            function allOn() {
+                ws.send("allOn"); //서버에 전송
+                console.log(`sent`);
+            }
+            function allOff() {
+                ws.send("allOff"); //서버에 전송
+                console.log(`se nt`);
+            }
+            ws.onmessage = function (event) {
+                if (event.data == 100) {
+                    console.log(event.data);
+                }
+            };
+        </script>
     </head>
     <body>
         <div class="container">
@@ -44,7 +60,7 @@
                         <div class="projector-control-bar">
                             projector control
                             <div class="master-button">
-                                <button>all on</button>
+                                <button onclick="allOn()">all on</button>
                                 <button>all off</button>
                             </div>
                         </div>
