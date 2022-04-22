@@ -5,7 +5,7 @@
 }
 html, body{
     height:100%;
-    background: rgb(25, 25, 25);
+    background: rgb(15, 15, 15);
 }
 
 .container {
@@ -23,13 +23,13 @@ html, body{
     display: flex;
     align-items: center;
     background: rgb(50, 50, 50);
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 #logo{
     width: 45px;
     height:45px;
-    margin: 0.8rem;
+    margin-left: 0.5rem;
 }
 .logo-text {
     display: flex;
@@ -53,15 +53,53 @@ html, body{
     justify-content: space-between;
     width: 100%;
     margin-top: 10px;
-    flex:6.5;
+    flex:5;
 }
 
 .view2d-container{
-    background-color: blueviolet;
+    
     width:55%;
     margin-right: 10px;
     border-radius: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+.view2d-container-bar {
+    background: rgb(50, 50, 50);
+    padding : 0.5rem ;
+    margin: 0rem;
+    flex: 0.2;
+    border-radius: 5px;
+}
+
+.view2d-container-bar p{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+.view2d-imgbox {
+    background-color: rgb(35, 35, 35);
+    flex: 9.8;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding :0.3rem;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+
+.view2d-imgbox img {
+    width: 70%;
+    height: auto;
+
+    margin: auto;
+
+
+}
+
+
 .status-container {
     background-color: rgb(131, 226, 43);
     width:27% ;
@@ -70,17 +108,73 @@ html, body{
 
 }
 .projector-control{
-    background-color: rgb(226, 64, 43);
+    
     width:28% ;
     border-radius: 15px;
+    height:100%
 }
+
+.projector-control-bar {
+    background: rgb(50, 50, 50);
+    padding : 0.5rem ;
+    margin: 0rem;
+    flex: 0.2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projector-control-bar p {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.master-button {
+    
+}
+.projector-control-body {
+    background: rgb(35, 35, 35);
+    display: flex;
+    flex-direction: column;
+    
+    max-height: 700px;
+   
+    
+}
+
+.projector-box {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    margin-top: 10px;
+    background: rgb(30, 30, 30);
+    align-items: center;
+    padding: .5rem;
+    
+    
+
+}
+.projector-box img {
+    width: 15%;
+    min-width: 35px;
+    height: auto;
+    padding: 0.2rem;
+    margin-right: 15px;
+    
+}
+
+.projector-box .data-sheet {
+    margin: 0.1rem;
+}
+
 
 .middle-body-container {
     display: flex;
     flex-direction: column;
     background-color: green;
     margin-top: 10px;
-    flex:2;
+    flex: 3;
     border-radius: 15px;
 
 }
@@ -88,6 +182,7 @@ html, body{
 .bottom-body-container {
     margin-top: 10px;
     background-color: pink;
-    flex:1.5;
+    flex: 3;
     border-radius: 15px;
 }
+
