@@ -21,12 +21,12 @@ var connects = []
 
 wss.on("connection", function(ws,req) {
     var location = url.parse(req.url, true);
-
+    
     var initMessage = {message:"connection"};
     ws.send(JSON.stringify(initMessage));
     connects.push(ws);
     console.log("New Client Connected : " + connects.length);
-
+    
     ws.on("message", data =>{
         
         console.log(`Received from user: ${data}`)
